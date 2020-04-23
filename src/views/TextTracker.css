@@ -1,0 +1,13 @@
+.combo-box{
+    
+    display: flex;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right:auto;
+    justify-content: space-around   
+    
+}
+   
+/* .mainwrapper{
+    background-color;
+} */

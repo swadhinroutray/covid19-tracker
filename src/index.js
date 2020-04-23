@@ -3,16 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import Header from './components/Header'
-import Covid from './components/Covid'
+import Tracker from './components/TextTracker'
 import * as serviceWorker from './serviceWorker';
 
+
 ReactDOM.render(
+
   <React.StrictMode>
+  <div className='bg'>
     <Header />
-    <Covid />
+    <Tracker />
     {/* <App /> */}
-    
+   
+    </div> 
   </React.StrictMode>,
+  
   document.getElementById('root')
 );
 
