@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App';
 import Header from './components/Header'
+import Covid from './components/Covid'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-  <div className = 'BG'>
     <Header />
+    <Covid />
     {/* <App /> */}
-    </div>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
