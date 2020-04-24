@@ -1,7 +1,7 @@
 {
   "name": "covid19",
   "version": "0.1.0",
-  "main":"app.js",
+  "main": "app.js",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.11",
@@ -16,7 +16,8 @@
     "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.1",
     "react-loadingg": "^1.7.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-sticky-footer": "0.1.0-rc3"
   },
   "scripts": {
     "start": "react-scripts start",

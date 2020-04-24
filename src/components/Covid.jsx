@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import '../views/Covid.css'
 import Chart from './Chart';
+import StickyFooter from 'react-sticky-footer';
+
 export class Covid extends Component {
        constructor(props){
            super(props)
@@ -41,8 +43,22 @@ export class Covid extends Component {
             
             <h4 className ='update'>Last Updated at: {this.props.updatedAt}</h4>
             <div>
-            <footer id = 'footer'> &copy; Swadhin Routray </footer>
-            </div>
+            {/* <StickyFooter
+                bottomThreshold={50}
+                normalStyles={{
+                backgroundColor: "#999999",
+                padding: "0vh"
+                }}
+                stickyStyles={{
+                backgroundColor: "rgba(255,255,255,.8)",
+                padding: "-2px"
+                }}
+                > */}
+                 
+                 <footer id= 'footer'>   &copy;	Swadhin Routray</footer>
+                
+                        
+                 </div>
             </div>
         )
     }
