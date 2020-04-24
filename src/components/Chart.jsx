@@ -51,7 +51,7 @@ export class Chart extends Component {
                    }
                 }}
                 width={300}
-                height={250}
+                
                 responsive = {true}
             />
 
