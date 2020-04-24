@@ -80,9 +80,12 @@ export class TextTracker extends Component {
                 recovered = {this.state.recovered} 
                 confirmed = {this.state.confirmed} 
                 updatedAt = {this.state.updatedAt}/>
+             
               </div>
             )
-        }
+        
+          }
+          
       }
     
 }

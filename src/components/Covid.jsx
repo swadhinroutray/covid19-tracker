@@ -38,8 +38,11 @@ export class Covid extends Component {
                 confirmed = {this.props.confirmed}
             />
             </div>
-            <h4 className ='update'>Last Updated at: {this.props.updatedAt}</h4>
             
+            <h4 className ='update'>Last Updated at: {this.props.updatedAt}</h4>
+            <div>
+            <footer id = 'footer'> &copy; Swadhin Routray </footer>
+            </div>
             </div>
         )
     }
