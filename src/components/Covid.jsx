@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import '../views/Covid.css'
-import PieChart from './PieChart';
+import Chart from './Chart';
 export class Covid extends Component {
        constructor(props){
            super(props)
@@ -32,7 +32,7 @@ export class Covid extends Component {
             
             <br />
             <div>
-            <PieChart
+            <Chart
                 dead = {this.props.dead}   
                 recovered = {this.props.recovered} 
                 confirmed = {this.props.confirmed}

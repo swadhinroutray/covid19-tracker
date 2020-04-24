@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 import {Bar} from 'react-chartjs-2';
-import '../views/PieChart.css'
-export class PieChart extends Component {
+import '../views/Chart.css'
+export class Chart extends Component {
     constructor(props){
         super(props)
-        //console.log(this.props)
-        // var info =[this.props.confirmed , this.props.dead , this.props.recovered];
-        // console.log(info)
         this.state = {
             chartData : {}
         }
-        // this.makeChart = this.makeChart.bind(this);
        
     }
     componentDidMount() {
@@ -22,7 +18,7 @@ export class PieChart extends Component {
             'Deaths',
             'Recovered'],
             datasets:[{
-                label: ['Confirmed','Deaths','Recovered'],
+                //label: ['Confirmed','Deaths','Recovered'],
                 data:[...info],
                 backgroundColor:[
                     'rgba(173, 216, 230, 1)',
@@ -39,17 +35,9 @@ export class PieChart extends Component {
         console.log(this.props)
         return (
             <div className ='PieChartWrapper'>
-            {/* <div className = 'chartHeader'>
-            <h3>Breakdown of Number of Cases</h3>
-            </div>
-            */}
-            {/* {this.makeChart} */}
             <Bar
             className='chart'
-                data ={ this.state.chartData
-                    // labels:this.state.labels,
-                    // datasets:this.state.datasets
-                }
+                data ={ this.state.chartData  }
                 options={{
                     maintainAspectRatio:true,
                     title:{
@@ -57,8 +45,12 @@ export class PieChart extends Component {
                     text:'Case Breakdown',
                     fontSize: 20
                     },
-                   
+                   legend:{
+                       display:false
+                   }
                 }}
+                width={550}
+                height={150}
             />
 
 
@@ -68,4 +60,4 @@ export class PieChart extends Component {
     }
 }
 
-export default PieChart
+export default Chart

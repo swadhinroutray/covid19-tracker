@@ -29,7 +29,7 @@ export class TextTracker extends Component {
         console.log(country)
         const url = 'https://covid19.mathdro.id/api/countries';
         var response;
-        this.setState( {fetching:true})
+        this.setState({fetching:true})
         if(country!=null)
         { 
             
