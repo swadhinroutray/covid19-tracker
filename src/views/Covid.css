@@ -49,9 +49,10 @@
 }
 #footer{
   position:fixed;
+  padding-bottom: 2px;
   left:0px;
   bottom:0px;
-  height: 2vh;
+  height: 3vh;
   width:100%;
   background:#999;
   text-align: center;

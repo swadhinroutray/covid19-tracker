@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import '../views/Covid.css'
 import Chart from './Chart';
-import StickyFooter from 'react-sticky-footer';
 
 export class Covid extends Component {
        constructor(props){
