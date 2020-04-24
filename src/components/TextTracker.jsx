@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import Covid from './Covid'
+import { SolarSystemLoading } from 'react-loadingg';
+// const Container = () => <SolarSystemLoading />;
 import '../views/TextTracker.css'
 
 
@@ -9,6 +11,7 @@ export class TextTracker extends Component {
    constructor(props){
     super(props)
     this.state = {
+        fetching: false,
         country:null,
         dead:null,
         recovered:null,
@@ -26,8 +29,10 @@ export class TextTracker extends Component {
         console.log(country)
         const url = 'https://covid19.mathdro.id/api/countries';
         var response;
+        this.setState( {fetching:true})
         if(country!=null)
-        {
+        { 
+            
             response  = await fetch(url+'/'+country);
         }
         else{
@@ -37,6 +42,7 @@ export class TextTracker extends Component {
 
         console.log(data)
         this.setState({
+            fetching:false,
             country:country,
             dead:data.deaths.value,
             recovered:data.recovered.value,
@@ -45,6 +51,14 @@ export class TextTracker extends Component {
         })
 }   
         render() {
+            if(this.state.fetching === true){
+              return(
+                <div>
+                  <SolarSystemLoading/>
+                </div>
+              )
+            }
+            else{
             return (
               <div className= 'mainwrapper'>
                 <Autocomplete
@@ -55,10 +69,8 @@ export class TextTracker extends Component {
                 renderInput={(params) => <TextField {...params} label="Enter a Country" variant="outlined" />}
                 //value = {(country)=>country.label}
                 onChange = {(e,value) =>{
-                  // if(value.label ===null){
-                    
-                  // }
-                  this.getDetails(value.label||'India')
+                    this.getDetails(value.label);
+                  
                 }}
               />
 
@@ -71,6 +83,7 @@ export class TextTracker extends Component {
               </div>
             )
         }
+      }
     
 }
 const countries = [

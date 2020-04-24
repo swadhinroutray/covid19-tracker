@@ -5,32 +5,32 @@
 }
 
 .Confirmed{
-  width: 320px;
+  width: 400px;
   padding: 10px;
   border: 5px solid gray;
   border-radius: 4px;
   margin: 0;
   text-align: center;
-  background: lightblue;
+  background: #add8e6;
 }
 
 .Deaths{
-    width: 320px;
+    width: 400px;
   padding: 10px;
   border: 5px solid gray;
   border-radius: 4px;
   margin: 0;
   text-align: center;
-  background: lightcoral;
+  background: #f08080;
 }
 .Recovered{
-    width: 320px;
+  width: 400px;
   padding: 10px;
   border: 5px solid gray;
   border-radius: 4px;
   margin: 0;
   text-align: center;
-  background: lightgreen;
+  background: #90ee90;
 }
 .update{
     height: 6em;
@@ -42,4 +42,8 @@
     display: flex;
     align-items: center;
     justify-content: center  
+}
+.fontSize{
+  font-family: cursive;
+  font-style: italic;
 }
