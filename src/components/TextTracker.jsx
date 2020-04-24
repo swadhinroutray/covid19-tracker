@@ -73,7 +73,7 @@ export class TextTracker extends Component {
                   
                 }}
               />
-
+              
               <Covid 
                 country = {this.state.country} 
                 dead= {this.state.dead}   
