@@ -19,14 +19,14 @@ export class Covid extends Component {
             <div className = 'main-wrapper'>
 
                 <div className ='Confirmed'>
-                <h2 className = 'fontSize'>Confirmed number of cases in {this.props.country}: {this.props.confirmed} </h2> 
+                <h2 className = 'fontSize'>Confirmed number of cases: {this.props.confirmed} </h2> 
                 </div>
                 <div className ='Deaths'>
-                <h2 className = 'fontSize'>Confirmed number of deaths in {this.props.country}: {this.props.dead}</h2>
+                <h2 className = 'fontSize'>Confirmed number of deaths: {this.props.dead}</h2>
                 </div>
             
                 <div className ='Recovered'>
-                <h2 className = 'fontSize'>Confirmed number of recovered patients in {this.props.country}: {this.props.recovered}</h2>
+                <h2 className = 'fontSize'>Confirmed number of recovered patients: {this.props.recovered}</h2>
                 </div>
                
             </div>
@@ -42,18 +42,6 @@ export class Covid extends Component {
             
             <h4 className ='update'>Last Updated at: {this.props.updatedAt}</h4>
             <div>
-            {/* <StickyFooter
-                bottomThreshold={50}
-                normalStyles={{
-                backgroundColor: "#999999",
-                padding: "0vh"
-                }}
-                stickyStyles={{
-                backgroundColor: "rgba(255,255,255,.8)",
-                padding: "-2px"
-                }}
-                > */}
-                 
                  <footer id= 'footer'>   &copy;	Swadhin Routray</footer>
                 
                         
