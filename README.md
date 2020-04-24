@@ -4,5 +4,5 @@
 - Initialised using create-react-app
 - Site deployed using Netlify
 
-# Check the project out (here)[covid-19-tracker.in]
+# Check the project out [here](covid-19-tracker.in)
 
