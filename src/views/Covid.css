@@ -44,6 +44,74 @@
     justify-content: center  
 }
 .fontSize{
-  font-family: cursive;
+  font-family: sans-serif;
   font-style: italic;
 }
+
+@media screen and (max-width: 780px) { 
+  .main-wrapper{
+    display: list-item;
+    /* justify-content: space-around; */
+  }
+  .Confirmed{
+    width: 60vh;
+    padding: 10px;
+    border: 5px solid gray;
+    border-radius: 4px;
+    margin: 15px;
+    text-align: center;
+    background: #add8e6;
+  }
+  
+  .Deaths{
+      width: 60vh;
+    padding: 10px;
+    border: 5px solid gray;
+    border-radius: 4px;
+    margin: 15px;
+    text-align: center;
+    background: #f08080;
+  }
+  .Recovered{
+    width: 60vh;
+    padding: 10px;
+    border: 5px solid gray;
+    border-radius: 4px;
+    margin: 15px;
+    text-align: center;
+    background: #90ee90;
+  }
+}
+@media screen and (max-width: 480px) { 
+  .main-wrapper{
+    display: list-item;
+    /* justify-content: space-around; */
+  }
+  .Confirmed{
+    width: 40vh;
+    padding: 10px;
+    border: 5px solid gray;
+    border-radius: 4px;
+    margin: 15px;
+    text-align: center;
+    background: #add8e6;
+  }
+  
+  .Deaths{
+      width: 40vh;
+    padding: 10px;
+    border: 5px solid gray;
+    border-radius: 4px;
+    margin: 15px;
+    text-align: center;
+    background: #f08080;
+  }
+  .Recovered{
+    width: 40vh;
+    padding: 10px;
+    border: 5px solid gray;
+    border-radius: 4px;
+    margin: 15px;
+    text-align: center;
+    background: #90ee90;
+  }}

@@ -34,12 +34,12 @@ export class Chart extends Component {
     render() {
         console.log(this.props)
         return (
-            <div className ='PieChartWrapper'>
+            <div className ='ChartWrapper'>
             <Bar
             className='chart'
                 data ={ this.state.chartData  }
                 options={{
-                    maintainAspectRatio:true,
+                    maintainAspectRatio:false,
                     title:{
                     display:true,
                     text:'Case Breakdown',
@@ -49,8 +49,9 @@ export class Chart extends Component {
                        display:false
                    }
                 }}
-                width={550}
-                height={150}
+                width={500}
+                height={250}
+                responsive = {true}
             />
 
 

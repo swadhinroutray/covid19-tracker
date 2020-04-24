@@ -1,4 +1,4 @@
-.PieChartWrapper{
+.ChartWrapper{
     display: list-item;
     justify-content: space-around;
     margin-left: auto;
@@ -6,14 +6,29 @@
     margin: 20px
 }
 
-.chartHeader{
-    font-size: xx-large ;
-    text-align: center;
-    font-family: cursive;
-    
-}
-.chart{
+/* .chart{
     height: 30vh;
     width: 30vh;
     
+} */
+
+@media screen and (max-width: 780px) { 
+    .ChartWrapper{
+        display: list-item;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 20px
+        
+    }
 }
+@media screen and (max-width: 480px) { 
+    .ChartWrapper{
+    display: list-item;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px
+    
+} }
+
